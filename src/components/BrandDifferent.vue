@@ -46,7 +46,7 @@ const AboutBrand = [
         font-weight: 400;
         font-size: 24px;
         line-height: 140%;
-        color: #2A254B;
+        color: var(--black);
         margin-bottom: 36px;
     }
     &_wrap {
@@ -62,7 +62,7 @@ const AboutBrand = [
                 font-weight: 400;
                 font-size: 20px;
                 line-height: 140%;
-                color: #2A254B;
+                color: var(--black);
                 margin: 12px 0;
             }
             &_txt {
@@ -71,7 +71,7 @@ const AboutBrand = [
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 150%;
-                color: #2A254B;
+                color: var(--black);
             }
         }
     }

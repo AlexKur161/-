@@ -32,7 +32,7 @@ const props = defineProps({
     font-weight: 400;
     font-size: 20px;
     line-height: 140%;
-    color: #2A254B;
+    color: var(--black);
     margin-top: 24px;
     margin-bottom: 8px;
     }
@@ -42,7 +42,7 @@ const props = defineProps({
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
-    color: #2A254B;
+    color: var(--black);
     }
 }
 </style>

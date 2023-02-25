@@ -74,7 +74,7 @@ const props = defineProps({
         font-weight: 400;
         font-size: 16px;
         line-height: 150%;
-        color: #2A254B;
+        color: var(--black);
         position: absolute;
         bottom: 46px;
         padding: 16px 32px;

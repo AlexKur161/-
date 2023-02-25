@@ -15,7 +15,7 @@
 <script setup>
 
 import { ref } from 'vue'
-import Product from '../components/Product.vue'
+import Product from '@/components/Product.vue'
 
 const products = ref([
     {
@@ -60,7 +60,7 @@ const products = ref([
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    color: #2A254B;
+    color: var(--black);
     padding: 16px 32px;
     border: none;
     cursor: pointer;

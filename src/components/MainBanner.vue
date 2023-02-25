@@ -5,7 +5,7 @@
                 title="Luxury homeware for people who love timeless design quality"
                 txt="Shop the new Spring 2022 collection today"
                 link="#"
-                linkColor="#2A254B"
+                linkColor="var(--black)"
                 linkBackground="#F9F9F9"
                 colorTitle="#22202E"
                 colorTxt="#5B5676"
@@ -15,7 +15,7 @@
     </div>
 </template>
 <script setup>
-import HeroInfo from './HeroInfo.vue'
+import HeroInfo from '@/components/HeroInfo.vue'
 
 </script>
 <style lang="scss" scoped>
