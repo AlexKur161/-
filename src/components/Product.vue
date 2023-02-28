@@ -1,7 +1,9 @@
 <template>
             <div class="product_wrap_item">
-                <img :src="image" :alt="title">
-                <h3 class="product_wrap_item_title">{{title}}</h3>
+                <router-link to="/">
+                <img class="product_wrap_item_img" :src="image" :alt="title">
+                </router-link>
+                <router-link to="/" class="product_wrap_item_title">{{title}}</router-link>
                 <p class="product_wrap_item_price">{{price}}</p>
             </div>
 </template>
@@ -35,6 +37,10 @@ const props = defineProps({
     color: var(--black);
     margin-top: 24px;
     margin-bottom: 8px;
+    text-decoration: none;
+    }
+    &_img {
+        max-height: 366px;
     }
     &_price {
     font-family: 'Satoshi';

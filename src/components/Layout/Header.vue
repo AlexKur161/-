@@ -5,22 +5,22 @@
                 <div class="header-top-search">
                     <img src="/svg/search.svg" alt="search">
                 </div>
-                <a class="header-logo" href="#">Avion</a>
+                <router-link class="header-logo" to="/">Avion</router-link>
                 <div class="header-top-right">
                     <div class="header-top-right__basket">
-                        <a href="#">
+                        <router-link to="/">
                             <img src="/svg/basket.svg" alt="basket">
-                        </a>
+                        </router-link>
                     </div>
                     <div class="header-top-right__avatar">
-                        <a href="#">
+                        <router-link to="/">
                             <img src="/svg/avatar.svg" alt="avatar">
-                        </a>
+                        </router-link>
                     </div>
                 </div>
             </div>
             <div class="header-menu">
-                <a class="header-menu-link" v-for="(element, i) in menu" :key="i" :href="element.path">{{element.name}}</a>
+                <router-link class="header-menu-link" v-for="(element, i) in menu" :key="i" :to="element.path">{{element.name}}</router-link>
             </div>
         </div>
     </header>
