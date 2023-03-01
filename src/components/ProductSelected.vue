@@ -9,12 +9,15 @@
             :price="element.price"
             />
         </div>
-        <button class="hero_info_btn">View collection</button>
+        <div class="product_collection">
+            <ButtonUi color="white">View collection</ButtonUi>
+        </div>
     </div>
 </template>
 <script setup>
 
 import { ref } from 'vue'
+import ButtonUi from '@/ui/ButtonUi.vue'
 import Product from '@/components/Product.vue'
 
 const products = ref([
@@ -52,20 +55,10 @@ const products = ref([
         gap: 20px;
         justify-content: space-between;
     }
-}
-.hero_info_btn {
-    background: #F9F9F9;
-    font-family: 'Satoshi';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    color: var(--black);
-    padding: 16px 32px;
-    border: none;
-    cursor: pointer;
-    margin: auto;
-    display: block;
-    margin-top: 48px
+    &_collection {
+        display: flex;
+        justify-content: center;
+        margin-top: 48px
+    }
 }
 </style>

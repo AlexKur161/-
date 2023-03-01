@@ -1,11 +1,10 @@
 <template>
     <div class="hero">
-            
                 <HeroInfo
                 title="Luxury homeware for people who love timeless design quality"
                 txt="Shop the new Spring 2022 collection today"
                 link="#"
-                linkColor="var(--black)"
+                linkColor="white"
                 linkBackground="#F9F9F9"
                 colorTitle="#22202E"
                 colorTxt="#5B5676"

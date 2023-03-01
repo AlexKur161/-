@@ -5,7 +5,7 @@
             title="It started with a small idea"
             txt="A global brand with local beginnings, our story begain in a small studio in South London in early 2014"
             link="#"
-            linkColor="#FFFFFF"
+            linkColor="grey"
             linkBackground="rgba(249, 249, 249, 0.15)"
             colorTitle="#FFFFFF"
             colorTxt="#FFFFFF"

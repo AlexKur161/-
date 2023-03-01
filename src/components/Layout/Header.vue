@@ -31,31 +31,31 @@ import {ref} from 'vue'
 const menu = [
     {
         name: 'Plant pots',
-        path: '/plant'
+        path: '/'
     },
     {
         name: 'Ceramics',
-        path: '/plant'
+        path: '/'
     },
     {
         name: 'Tables',
-        path: '/plant'
+        path: '/'
     },
     {
         name: 'Chairs',
-        path: '/plant'
+        path: '/'
     },
     {
         name: 'Crockery',
-        path: '/plant'
+        path: '/'
     },
     {
         name: 'Tableware',
-        path: '/plant'
+        path: '/'
     },
     {
         name: 'Cutlery',
-        path: '/plant'
+        path: '/'
     }
 ]
 
