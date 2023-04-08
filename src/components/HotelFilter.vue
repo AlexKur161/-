@@ -348,7 +348,7 @@ this.FILTER_CARD(this.filterCard)
     width: 100%;
     height: 100%;
     padding: 15px 20px;
-    font-family: 'PT Sans';
+    font-family: "Satoshi", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -374,7 +374,7 @@ this.FILTER_CARD(this.filterCard)
       justify-content: center;
       align-items: center;
       padding: 17px 95px;
-      font-family: 'PT Sans';
+      font-family: "Satoshi", sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 16px;

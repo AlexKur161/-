@@ -83,7 +83,7 @@ export default {
     transform: rotate(45deg);
 }
 .title-checkbox{
-    font-family: 'PT Sans';
+    font-family: "Satoshi", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;

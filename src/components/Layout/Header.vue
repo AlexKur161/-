@@ -35,7 +35,7 @@ const menu = [
     },
     {
         name: 'Catalog',
-        path: '/'
+        path: '/catalog'
     },
     {
         name: 'About',
