@@ -30,31 +30,19 @@ import {ref} from 'vue'
 
 const menu = [
     {
-        name: 'Plant pots',
+        name: 'Home',
         path: '/'
     },
     {
-        name: 'Ceramics',
+        name: 'Catalog',
         path: '/'
     },
     {
-        name: 'Tables',
+        name: 'About',
         path: '/'
     },
     {
-        name: 'Chairs',
-        path: '/'
-    },
-    {
-        name: 'Crockery',
-        path: '/'
-    },
-    {
-        name: 'Tableware',
-        path: '/'
-    },
-    {
-        name: 'Cutlery',
+        name: 'Contacts',
         path: '/'
     }
 ]

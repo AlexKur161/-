@@ -14,6 +14,7 @@ import MainBanner from '@/components/MainBanner.vue'
 import BrandDifferent from '@/components/BrandDifferent.vue'
 import ProductSelected from '@/components/ProductSelected.vue'
 import StartedIdea from '@/components/StartedIdea.vue'
+import HotelFilter from '@/components/HotelFilter.vue'
 
 </script>
 
