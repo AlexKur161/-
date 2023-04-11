@@ -39,11 +39,11 @@ const menu = [
     },
     {
         name: 'About',
-        path: '/'
+        path: '/about'
     },
     {
         name: 'Contacts',
-        path: '/'
+        path: 'contacts'
     }
 ]
 

@@ -1,10 +1,12 @@
 <template>
   <div class="container">
   <Header/>
+  <div class="content">
   <MainBanner/>
   <BrandDifferent/>
   <ProductSelected/>
   <StartedIdea/>
+  </div>
   </div>
   <Footer/>
 </template>
