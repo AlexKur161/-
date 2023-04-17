@@ -3,7 +3,7 @@
     <div class="wrap-filter_mini filter-attributes">
       <h3 class="wrap-filter_mini_title">Страна</h3>
       <div class="wrap-filter_mini_features wrap-filter-country">
-        <button v-if="showClearBtn" class="clear_btn" @click="clearValue"><img src="../assets/img/close.svg" alt="close"></button>
+        <button v-if="showClearBtn" class="clear_btn" @click="clearValue"><img src="/public/svg/close.svg" alt="close"></button>
         <input v-model="countriesFields" placeholder="Поиск стран" @change="serchcheckCountries" class="wrap-filter_input input_country" type="text">
       </div>
       <div class="wrap-filter_mini_features checkbox-features">
@@ -40,7 +40,7 @@
           <div class="wrap-filter_mini_features wrap-filter_mini_price_features">
             <p class="wrap-filter_input">{{barMinValue}}</p>
           </div>
-          <img src="../assets/img/line.svg" alt="">
+          <img src="/public/svg/line.svg" alt="">
           <div class="wrap-filter_mini_features  wrap-filter_mini_price_features">
             <p class="wrap-filter_input">{{barMaxValue}}</p>
           </div>
@@ -72,6 +72,7 @@ import Checkbox from '../components/Checkbox.vue';
 import CheckboxGroup from "../components/CheckboxGroup.vue";
 import HotelCard from "../components/HotelCard.vue"
 import {mapGetters, mapActions} from "vuex"
+
 
 export default{
   data() {
@@ -333,6 +334,10 @@ this.FILTER_CARD(this.filterCard)
         this.countriesFields = ""
         this.reviews = ""
       }
+  },
+created () {
+    
+
   }
 }
 
@@ -442,7 +447,7 @@ this.FILTER_CARD(this.filterCard)
         position: absolute;
         width: 17px;
         height: 17px;
-        background-image: url("../assets/img/search.svg");
+        background-image: url("/public/svg/search.svg");
         background-size: cover;
         background-repeat: no-repeat;
         top: 50%;

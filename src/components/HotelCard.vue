@@ -6,22 +6,22 @@
             <div class="card_description_attributes">
                 <div class="card_description_attributes_mini">
                     <div class="star-wrap">
-                        <img src="../assets/img/star.svg" alt="star">
-                        <img src="../assets/img/star.svg" alt="star">
-                        <img src="../assets/img/star.svg" alt="star">
-                        <img src="../assets/img/star.svg" alt="star">
-                        <img src="../assets/img/star.svg" alt="star">
+                        <img src="/public/svg/star.svg" alt="star">
+                        <img src="/public/svg/star.svg" alt="star">
+                        <img src="/public/svg/star.svg" alt="star">
+                        <img src="/public/svg/star.svg" alt="star">
+                        <img src="/public/svg/star.svg" alt="star">
                     </div>
                 </div>
                 <div class="card_description_attributes_mini">
                     <h5 class="type_housing">{{hotel.type}}</h5>
                 </div>
                 <div class="card_description_attributes_mini">
-                    <img src="../assets/img/elipse.svg" alt="elips">
+                    <img src="/public/svg/elipse.svg" alt="elips">
                     <h5 class="reviews">{{hotel.reviews_amount}} Отзыва</h5>
                 </div>
                 <div class="card_description_attributes_mini">
-                    <img src="../assets/img/indicator.svg" alt="indicator">
+                    <img src="/public/svg/indicator.svg" alt="indicator">
                     <h5 class="country">{{hotel.country}}</h5>
                 </div>
             </div>
@@ -30,10 +30,10 @@
         <div class="card_price">
             <p class="card_price_title">{{hotel.min_price}} ₽</p>
             <p class="card_price_night">Цена за 1 ночь</p>
-            <button class="card_price_btn">
-                <img src="../assets/img/bron.svg" alt="bron">
-                <p>Забронировать</p>
-            </button>
+            <router-link :to="'hotel/'+ hotel.id" class="card_price_btn">
+                <img src="/public/svg/bron.svg" alt="bron">
+                <p>Подробнее</p>
+            </router-link>
         </div>
     </div>
 
@@ -50,22 +50,22 @@
             <div class="card_description_attributes">
                 <div class="card_description_attributes_mini">
                     <div class="star-wrap">
-                        <img src="../assets/img/star.svg" alt="star">
-                        <img src="../assets/img/star.svg" alt="star">
-                        <img src="../assets/img/star.svg" alt="star">
-                        <img src="../assets/img/star.svg" alt="star">
-                        <img src="../assets/img/star.svg" alt="star">
+                        <img src="/public/svg/star.svg" alt="star">
+                        <img src="/public/svg/star.svg" alt="star">
+                        <img src="/public/svg/star.svg" alt="star">
+                        <img src="/public/svg/star.svg" alt="star">
+                        <img src="/public/svg/star.svg" alt="star">
                     </div>
                 </div>
                 <div class="card_description_attributes_mini">
                     <h5 class="type_housing">{{hotel.type}}</h5>
                 </div>
                 <div class="card_description_attributes_mini">
-                    <img src="../assets/img/elipse.svg" alt="elips">
+                    <img src="/public/svg/elipse.svg" alt="elips">
                     <h5 class="reviews">{{hotel.reviews_amount}} Отзыва</h5>
                 </div>
                 <div class="card_description_attributes_mini">
-                    <img src="../assets/img/indicator.svg" alt="indicator">
+                    <img src="/public/svg/indicator.svg" alt="indicator">
                     <h5 class="country">{{hotel.country}}</h5>
                 </div>
             </div>
@@ -75,7 +75,7 @@
             <p class="card_price_title">{{hotel.min_price}} ₽</p>
             <p class="card_price_night">Цена за 1 ночь</p>
             <button class="card_price_btn">
-                <img src="../assets/img/bron.svg" alt="bron">
+                <img src="/public/svg/bron.svg" alt="bron">
                 <p>Забронировать</p>
             </button>
         </div>
@@ -239,6 +239,7 @@ export default {
             border: none;
             padding: 13px 30px 15px 30px;
             cursor: pointer;
+            text-decoration: none;
         }
     }
     &_description_title{
@@ -250,10 +251,8 @@ export default {
     }
     &_description_attributes{
         display: flex;
-        justify-content: space-between;
         align-items: center;
         margin-bottom: 18px;
-        max-width: 360px;
         &_mini{
             display: flex;
             gap: 8px;

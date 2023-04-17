@@ -3,6 +3,7 @@ import Home from "@/pages/Home.vue"
 import About from "@/pages/About.vue"
 import Contacts from "@/pages/Contacts.vue"
 import Catalog from "@/pages/Catalog.vue"
+import HotelPage from "@/pages/HotelPage.vue"
 
 const router = createRouter({
     history: createWebHistory(),
@@ -26,6 +27,11 @@ const router = createRouter({
             path: '/contacts',
             name: 'Contacts',
             component: Contacts 
+        },
+        {
+            path: '/hotel/:id',
+            name: 'HotelPage',
+            component: HotelPage 
         }
     ]
 })
