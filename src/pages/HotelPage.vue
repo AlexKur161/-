@@ -45,9 +45,9 @@
                                 <h3 class="title_info">Полная информация</h3>
                                 <p class="txt_info">{{product.description}}</p>
                                 <h3 class="title_info">Комфорт</h3>
-                                <ul>
-                                    <li v-for="(li, i) in product.comfort" :key="i">{{li}}</li>
-                                </ul>
+                                    <div class="wrap_kompf">
+                                        <p v-for="(item, i) in product.comfort" :key="i">{{item}}</p>
+                                    </div>
                             </div>
                             <div class="info_wrap_item info_wrap_form"></div>
                         </div>
@@ -108,12 +108,24 @@ export default {
             line-height: 110%;
             color: #000000;
         }
+        .txt_info{
+            max-width: 600px;
+        }
         &_form{
             background: #FFFFFF;
             box-shadow: 0px 20px 40px rgba(135, 124, 202, 0.15);
             border-radius: 10px;
             width: 400px;
             height: 500px;
+        }
+        .wrap_kompf{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 600px;
+            p{
+                width: 180px;
+            }
         }
         .discription_hotels{
             background: #FFFFFF;
