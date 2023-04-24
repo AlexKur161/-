@@ -347,7 +347,7 @@ created () {
 .wrap-filter{
   display: flex;
   justify-content: space-between;
-  padding-top: 56px;
+  padding: 60px 0;
   gap: 40px;
   &_input{
     width: 100%;
